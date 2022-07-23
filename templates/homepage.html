@@ -1,171 +1,177 @@
-{% load static %} 
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/w3.css' %}">
-    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="{% static 'js/homepage.js' %}"></script>
-    <title>Firebreather's portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/w3.css' %}">
+  <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="{% static 'js/homepage.js' %}"></script>
+  <title>Firebreather's portfolio</title>
 </head>
+
 <body class="w3-black">
-    <nav class="w3-sidebar w3-hide-small w3-bar-block w3-center mysidebar">
-        <div>
-            <img src="{% static 'images/fb1.svg' %}" alt="" class="w3-image w3-opacity-min">
-        </div>
-        <div>
-            <a class="w3-bar-item w3-button w3-padding-large w3-black" href="{% url 'home' %}">HOME</a>
-            <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#photos">PHOTOS</a>
-            <a class="w3-bar-item w3-button w3-padding-large w3-hover-black"href="#projects">PROJECTS</a>
-            <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#about">ABOUT</a>
-            <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#contact">CONTACT</a>
-            <a href="  /mlapp/ " class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#mlapp">FireAutoML</a>
-        </div>
-    </nav>
-    <div class="w3-top w3-hide-large w3-hide-medium ">
-        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-small w3-center">
-            <a class="w3-bar-item w3-button w3-padding-large w3-black" href="{% url 'home' %}">HOME</a>
-            <a class="w3-bar-item w3-button w3-padding-large w3-hover-black"href="#projects">PROJECTS</a>
-            <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#about">ABOUT</a>
-        </div>
+  <nav class="w3-sidebar w3-hide-small w3-bar-block w3-center mysidebar">
+    <div>
+      <img src="{% static 'images/fb1.svg' %}" alt="" class="w3-image w3-opacity-min">
     </div>
-    <div id="main" class="w3-padding-large">
-        <header class="w3-container w3-pading-32 w3-center w3-black">
-            <h1 class="w3-jumbo"><span class="w3-hide-small">I'm Akinrotimi </span> <span class="w3-hide-large w3-hide-medium">Ak.</span> Daniel</h1>
-            <h3 class="w3-xxlarge"><span class="w3-hide-small"> a.k.a LordFirebreather</span></h3>
-            <p class="w3-hide-small">PCB Designer, Machine Learning Engineer and Web Developer</p>
-            <p class="w3-hide-large w3-hide-medium"> Ml Eng, Web Dev</p>
-            <img src="{% static 'images/fb1.png' %}" class="w3-image " width="992" height="1108" alt="">
-        </header>
+    <div>
+      <a class="w3-bar-item w3-button w3-padding-large w3-black" href="{% url 'home' %}">HOME</a>
+      <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#photos">PHOTOS</a>
+      <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#projects">PROJECTS</a>
+      <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#about">ABOUT</a>
+      <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#contact">CONTACT</a>
+      <a href="  /mlapp/ " class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#mlapp">FireAutoML</a>
+    </div>
+  </nav>
+  <div class="w3-top w3-hide-large w3-hide-medium ">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-small w3-center">
+      <a class="w3-bar-item w3-button w3-padding-large w3-black" href="{% url 'home' %}">HOME</a>
+      <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#projects">PROJECTS</a>
+      <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="#about">ABOUT</a>
+    </div>
+  </div>
+  <div id="main" class="w3-padding-large">
+    <header class="w3-container w3-pading-32 w3-center w3-black">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">I'm Akinrotimi </span> <span
+          class="w3-hide-large w3-hide-medium">Ak.</span> Daniel</h1>
+      <h3 class="w3-xxlarge"><span class="w3-hide-small"> a.k.a LordFirebreather</span></h3>
+      <p class="w3-hide-small">PCB Designer, Machine Learning Engineer and Web Developer</p>
+      <p class="w3-hide-large w3-hide-medium"> Ml Eng, Web Dev</p>
+      <img src="{% static 'images/fb1.png' %}" class="w3-image " width="992" height="1108" alt="">
+    </header>
+  </div>
+
+  <div class="w3-content w3-justify w3-text-gray w3-padding-64 " style="padding-left: 4px;">
+    <h2 class="w3-text-light-grey ">My Name</h2>
+    <hr class="w3-opacity" style="width: 200px;">
+    <p id="about">
+      I am a Akinrotimi Daniel. I'm a Christian, who really loves his God.
+      I am currently a student of mechatronics engineering at the federal
+      university of Agriculture Abeokuta. I have a deep interest in relative and quantum
+      physics, hoping to one day discover the grand-unification-theory. I also am in love with artificial
+      intelligence.
+      Finally, I am a software developer with my interests centered around AI, web , networking and cybersecurity.
+    </p>
+
+    <h3 class="w3-text-light-gray"> My Skills</h3>
+    <hr class="w3-opacity" style="width: 200px;">
+
+    <p class="w3-wide">Python</p>
+    <div class="w3-white">
+      <div class="w3-dark-gray" style="height:28px; width:65%;"></div>
     </div>
 
-    <div class="w3-content w3-justify w3-text-gray w3-padding-64 " style="padding-left: 4px;">
-        <h2 class="w3-text-light-grey ">My Name</h2>
-        <hr class="w3-opacity" style="width: 200px;">
-        <p id="about">
-            I am a Akinrotimi Daniel. I'm a Christian, who really loves his God.
-            I am currently a student of mechatronics engineering at the federal
-            university of Agriculture Abeokuta. I have a deep interest in relative and quantum
-            physics, hoping to one day discover the grand-unification-theory. I also am in love with artificial
-            intelligence. 
-            Finally, I am a software developer with my interests centered around AI, web , networking and cybersecurity. 
+    <p class="w3-wide">Golang -learning phase</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px; width:5%;"></div>
+    </div>
+
+    <p class="w3-wide"> Web full stack</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px; width:45%;"></div>
+    </div>
+
+    <p class="w3-wide"> Data Science/ Machine Learning</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px; width:35%;"></div>
+    </div>
+
+    <p class="w3-wide"> Music/vocal/instrumentals</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px; width:75%;"></div>
+    </div>
+
+    <p class="w3-wide"> PCB DESIGN</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px; width:45%;"></div>
+    </div>
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">-</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">--</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5+</span><br>
+        Meetings
+      </div>
+    </div>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> <a href="" download>Download Resume</a>
+    </button>
+
+
+    <div class="w3-padding-64 w3-content" id="photos">
+      <h2 class="w3-text-light-grey">My Photos</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <img src="{% static 'images/1.png' %}" style="width:100%">
+          <img src="{% static 'images/2.jpg' %}" style="width:100%">
+          <img src="{% static 'images/3.jpg' %}" style="width:100%">
+        </div>
+
+        <div class="w3-half">
+          <img src="{% static 'images/4.png' %}" style="width:100%">
+          <img src="{% static 'images/5.png' %}" style="width:100%">
+          <img src="{% static 'images/6.jpg' %}" style="width:100%">
+          <img src="{% static 'images/7.png' %}" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">Contact Me</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Lagos, Nigeria</p>
+        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +2348129741366</p>
+        <p><i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Github: firebreather-heart</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: dtenny95@gmail.com</p>
+      </div><br>
+      <p>Lets get in touch. Send me a message:</p>
+
+      <form action="" method="post">
+        {% csrf_token %}
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" id="name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" id="email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" id="subject" required name="Subject">
         </p>
-
-        <h3 class="w3-text-light-gray"> My Skills</h3>
-        <hr class="w3-opacity" style="width: 200px;">
-        
-        <p class="w3-wide">Python</p>
-        <div class="w3-white">
-            <div class="w3-dark-gray" style="height:28px; width:65%;"></div>
-        </div>
-
-        <p class="w3-wide">Golang -learning phase</p>
-        <div class="w3-white"><div class="w3-dark-grey" style="height:28px; width:5%;"></div></div>
-
-        <p class="w3-wide"> Web full stack</p>
-        <div class="w3-white"><div class="w3-dark-grey" style="height:28px; width:45%;"></div></div>
-
-        <p class="w3-wide"> Data Science/ Machine Learning</p>
-        <div class="w3-white"><div class="w3-dark-grey" style="height:28px; width:35%;"></div></div>
-
-        <p class="w3-wide"> Music/vocal/instrumentals</p>
-        <div class="w3-white"><div class="w3-dark-grey" style="height:28px; width:75%;"></div></div>
-
-        <p class="w3-wide"> PCB DESIGN</p>
-        <div class="w3-white"><div class="w3-dark-grey" style="height:28px; width:45%;"></div></div>
-
-        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-            <div class="w3-quarter w3-section">
-              <span class="w3-xlarge">-</span><br>
-              Partners
-            </div>
-            <div class="w3-quarter w3-section">
-              <span class="w3-xlarge">5+</span><br>
-              Projects Done
-            </div>
-            <div class="w3-quarter w3-section">
-              <span class="w3-xlarge">--</span><br>
-              Happy Clients
-            </div>
-            <div class="w3-quarter w3-section">
-              <span class="w3-xlarge">5+</span><br>
-              Meetings
-            </div>
-          </div>
-          <button class="w3-button w3-light-grey w3-padding-large w3-section" >
-            <i class="fa fa-download"></i> <a href=""  download>Download Resume</a>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" id="message" required name="Message">
+        </p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
           </button>
-
-          <div class="w3-section projects" id="projects">
-            <div class="w3-light-grey w3-wide" style="height:24px; width:100%;"><p class="w3-margin">Projects</p></div>
-            <a href="{{sub.link}}">
-            {% for sub in project %} 
-              <div class="w3-card" style="display: block;">
-                  <img src="{{ sub.image.url }}" alt="" class="w3-image">
-                  <caption>{{sub.name}}</caption>
-              </div>
-            </a>
-            {% endfor %}
-          </div>
-
-          <div class="w3-padding-64 w3-content" id="photos">
-            <h2 class="w3-text-light-grey">My Photos</h2>
-            <hr style="width:200px" class="w3-opacity">
-            <div class="w3-row-padding" style="margin:0 -16px">
-              <div class="w3-half">
-                <img src="{% static 'images/1.png' %}" style="width:100%">
-                <img src="{% static 'images/2.jpg' %}" style="width:100%">
-                <img src="{% static 'images/3.jpg' %}" style="width:100%">
-              </div>
-        
-              <div class="w3-half">
-                <img src="{% static 'images/4.png' %}" style="width:100%">
-                <img src="{% static 'images/5.png' %}" style="width:100%">
-                <img src="{% static 'images/6.jpg' %}" style="width:100%">
-                <img src="{% static 'images/7.png' %}" style="width:100%">
-              </div>
-            </div>
-          </div>
-          <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-            <h2 class="w3-text-light-grey">Contact Me</h2>
-            <hr style="width:200px" class="w3-opacity">
-        
-            <div class="w3-section">
-              <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Lagos, Nigeria</p>
-              <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +2348129741366</p>
-              <p><i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Github: firebreather-heart</p>
-              <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: dtenny95@gmail.com</p>
-            </div><br>
-            <p>Lets get in touch. Send me a message:</p>
-        
-            <form action="" method="post">
-                {% csrf_token %}
-              <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" id="name" required name="Name"></p>
-              <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" id="email" required name="Email"></p>
-              <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" id="subject" required name="Subject"></p>
-              <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" id="message" required name="Message"></p>
-              <p>
-                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-                  <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                </button>
-              </p>
-            </form>
-          </div>
-
-          <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-whatsapp-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-            <p class="w3-medium">Powered by <a href="#" target="_blank" class="w3-hover-text-green">fireb_corps</a> courtesy - w3.css</p>
-          </footer>
-        
+        </p>
+      </form>
     </div>
+
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-whatsapp-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Powered by <a href="#" target="_blank" class="w3-hover-text-green">fireb_corps</a> courtesy -
+        w3.css</p>
+    </footer>
+
+  </div>
 </body>
+
 </html>

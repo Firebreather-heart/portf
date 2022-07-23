@@ -1,1 +1,1 @@
-web: gunicorn fireportf.wsgi:application --log-file -
+web gunicorn fireportf.wsgi:application --log-file -
