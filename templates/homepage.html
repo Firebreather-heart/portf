@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="{% static 'css/w3.css' %}">
   <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="{% static 'js/homepage.js' %}"></script>
   <title>Firebreather's portfolio</title>
 </head>
@@ -119,13 +119,13 @@
       </div><br>
       <p>Lets get in touch. Send me a message:</p>
 
-      <form action="" method="post">
+      <form action="{% url 'dm' %}" method="POST">
         {% csrf_token %}
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" id="name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" id="email" required name="Email"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" id="subject" required name="Subject">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" id="name" required name="name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" id="email" required name="email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" id="subject" required name="subject">
         </p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" id="message" required name="Message">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" id="message" required name="message">
         </p>
         <p>
           <button class="w3-button w3-light-grey w3-padding-large" type="submit">
