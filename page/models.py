@@ -13,7 +13,6 @@ class Project(models.Model):
         return self.name 
 
 class Task(models.Model):
-    name=models.CharField(max_length=250)
     project = models.ForeignKey(Project, on_delete=models.CASCADE,related_name='task' )
     description = models.TextField(max_length=1000)
     start =  models.DateTimeField(auto_now_add=True)
