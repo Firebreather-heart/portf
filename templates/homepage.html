@@ -61,12 +61,12 @@
     <h3 class="w3-text-light-gray"> My Skills</h3>
     <hr class="w3-opacity" style="width: 200px;">
     <div class=" fireim" style="display: flex; justify-content:space-between; margin-bottom:80px;">
-      <div><img src="{% static 'images/py.png' %}" class="w3-image w3-round-large"  width="100px"></div>
+      <div><img src="{% static 'images/py.png' %}" class="w3-image w3-round-large" width="100px"></div>
       <div><img src="{% static 'images/GO.svg' %}" class="w3-image w3-round-large" width="100px"></div>
       <div><img src="{% static 'images/al.png' %}" class="w3-image w3-round-large" width="100px"></div>
       <div><img src="{% static 'images/hcj.png' %}" class="w3-image w3-round-large" width="200px"></div>
     </div>
-    
+
 
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <div class="w3-quarter w3-section">
@@ -103,7 +103,7 @@
         <div class="w3-half">
           <img src="{% static 'images/4.png' %}" style="width:100%">
           <img src="{% static 'images/5.png' %}" style="width:100%">
-          
+
         </div>
       </div>
     </div>
@@ -135,11 +135,108 @@
       </form>
     </div>
 
+    <div class="popup" id="popup">
+      <div class="w3-card-4 maincard ">
+        <div class="w3-bar bar-one">
+          <p>Register for web development training Now</p>
+        </div>
+        <div class="w3-card-3 ">
+          <form action="{%url 'register' %}" method="post" class="w3-card w3-round-large formelement">
+            {% csrf_token %}
+            <p><label for="">First Name</label></p>
+            <p><input type="text" class="w3-input fem w3-round" name="firstname" required placeholder="first Name"></p>
+
+            <p><label for="">Surname</label></p>
+            <p><input type="text" class="w3-input fem w3-round" name="surname" required placeholder="Surname"></p>
+
+            <p><label for="">Date of Birth</label></p>
+            <p><input type="date" class="w3-input fem" name="age" required></p>
+
+            <p><label for="">Email Address</label></p>
+            <p><input type="email" name="email" class="w3-input fem" required></p>
+
+            <p><label for="">Phone Number</label></p>
+            <p><input type="tel" name="phone" class="w3-input fem" required></p>
+
+            <p><button type="submit" class="w3-button  w3-hover-blue w3-round"
+                style="background-color: darkslateblue;color:white">Register</button></p>
+
+          </form>
+        </div>
+      </div>
+      <style>
+        .popup {
+          display: none;
+          position: fixed;
+          z-index: 9;
+          top: 20%;
+          left: 20%;
+          height: 700px;
+          overflow: scroll;
+          background: white;
+          border: 1px solid rgb(22, 14, 42);
+          border-radius: 15px;
+          box-shadow: 10px burlywood;
+        }
+
+        .bar-one {
+          background-color: darkslateblue;
+          color: aliceblue;
+          padding: 16px;
+          font-weight: 700;
+        }
+
+        .fem {
+          border: 0.5px solid darkslateblue;
+          border-radius: 7.5px;
+        }
+
+        .formelement {
+          padding: 10px;
+        }
+
+        @media screen and (max-width:500px) {
+          .popup {
+            display: none;
+            position: fixed;
+            z-index: 9;
+            background: white;
+            height: 700px;
+            overflow: scroll;
+            border: 1px solid rgb(22, 14, 42);
+            border-radius: 15px;
+            box-shadow: 10px burlywood;
+            margin: 20px;
+            max-width: 400px;
+            left: 10%;
+            right: 10%;
+            top: 50px;
+          }
+
+          .bar-one {
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 16px;
+            font-weight: 700;
+          }
+
+          .fem {
+            border: 0.5px solid darkslateblue;
+            border-radius: 7.5px;
+          }
+
+          .formelement {
+            padding: 10px;
+          }
+        }
+      </style>
+    </div>
+
     <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
       <i class="fa fa-facebook-official w3-hover-opacity"></i>
       <i class="fa fa-instagram w3-hover-opacity"></i>
       <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-whatsapp-p w3-hover-opacity"></i>
+      <i class="fa fa-whatsapp-p w3-hover-opacity"><a href="https://wa.me/2348129741366"></a></i>
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin w3-hover-opacity"></i>
       <p class="w3-medium">Powered by <a href="#" target="_blank" class="w3-hover-text-green">fireb_corps</a> courtesy -
@@ -147,6 +244,27 @@
     </footer>
 
   </div>
+  <footer class="footie w3-bar">
+    <p><button onclick="opensesame()" class="w3-button w3-green w3-round">Register</button> Now for web design training,
+      Registration ends on 26th September. You will receive an email upon successful registration</p>
+    <style>
+      .footie {
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        z-index: 5;
+        padding: 4px;
+      }
+    </style>
+  </footer>
+  <script>
+    opensesame = () => {
+      popup = document.getElementById('popup');
+      popup.style.display = 'block';
+    }
+  </script>
 </body>
 
 </html>
