@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 gunicorn = "*"
 django = "*"
+django-jazzmin = "*"
+whitenoise = "*"
+python-dotenv = "*"
 django-heroku = "*"
 firebmail = "*"
 

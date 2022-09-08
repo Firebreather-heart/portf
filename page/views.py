@@ -2,8 +2,8 @@ from django.shortcuts import render,redirect
 import smtplib
 import ssl,threading
 from .main import sendmail
-from django.http import JsonResponse
-
+from django.http import HttpResponse
+from django.contrib.auth import authenticate, login
 
 # Define the transport variables
 ctx = ssl.create_default_context()
@@ -56,4 +56,21 @@ def register(request, ):
     return redirect('home')
 
 
-        
+# def stafflogin(request):
+#     if request.method =='post':
+#         email = request.POST.get('email')
+#         workerid= request.POST.get('worker-id')
+#         password = request.POST.get('password')
+#         user = authenticate(request, email=email, password=password, id_=workerid)
+
+#         if user is not None:
+#             if user.is_active:
+#                 login(request, user)
+#                 return HttpResponse('Login Successful')
+#             else:
+#                 return HttpResponse('Disabled Account')
+#         else:
+#             return HttpResponse('Invalid login')
+#     return render(request, 'login.html')
+
+
