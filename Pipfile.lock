@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "153d91a5e5360bba7cab608e0e6567a8d71d93d38a7c3257e42c01778fff0dfd"
+            "sha256": "2dd6d0485469cedcbc07fb136a6910596733be10b6f138f3dbae6c42802b7e69"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -47,12 +47,21 @@
             "index": "pypi",
             "version": "==0.3.1"
         },
-        "firebmail": {
+        "django-jazzmin": {
             "hashes": [
-                "sha256:b806bbdf019d44b0425527f2cdb27feabe9829ea12139a4ac3c27a88d7990fba"
+                "sha256:2ee5ea548e9d5d6cf6495025d006b063ecae84702304eb90c9c5ef37ba99078a",
+                "sha256:6b9f9951eee41f60793a0d2f6f3d57213bd5605ddda7a106acb2bcdec4ef124e"
             ],
             "index": "pypi",
-            "version": "==0.1"
+            "version": "==2.5.0"
+        },
+        "firebmail": {
+            "hashes": [
+                "sha256:118362d37625a19652eaa630abc95efa546684e8d58d7bb3cdfb4672a934acfe",
+                "sha256:a22cfda307fd0beabe534ff3632f4553193bce9e92630b9580a5735132e47d25"
+            ],
+            "index": "pypi",
+            "version": "==0.1.1"
         },
         "gunicorn": {
             "hashes": [
@@ -84,7 +93,7 @@
                 "sha256:1684eb44636dd462b66c3ee016599815514527ad99965de77f43e0944634a7e5",
                 "sha256:b77d08274639e3d34145dfa6c7008e66df0f04b7be7a75fd0d5292c191d79045"
             ],
-            "markers": "python_version >= '3.7'",
+            "index": "pypi",
             "version": "==0.21.0"
         },
         "setuptools": {
@@ -116,7 +125,7 @@
                 "sha256:8e9c600a5c18bd17655ef668ad55b5edf6c24ce9bdca5bf607649ca4b1e8e2c2",
                 "sha256:8fa943c6d4cd9e27673b70c21a07b0aa120873901e099cd46cab40f7cc96d567"
             ],
-            "markers": "python_version >= '3.7'",
+            "index": "pypi",
             "version": "==6.2.0"
         }
     },
