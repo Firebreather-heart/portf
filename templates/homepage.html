@@ -139,6 +139,7 @@
       <div class="w3-card-4 maincard ">
         <div class="w3-bar bar-one">
           <p>Register for web development training Now</p>
+          <a href="https://forms.gle/DUNoAjzB1Dzxhffv7" class="w3-button w3-green w3-hover-pale-green"><p>click here to take a survey, it will help us set the best time for the lessons</p></a>
         </div>
         <div class="w3-card-3 ">
           <form action="{%url 'register' %}" method="post" class="w3-card w3-round-large formelement">
@@ -159,7 +160,8 @@
             <p><input type="tel" name="phone" class="w3-input fem" required></p>
 
             <p><button type="submit" class="w3-button  w3-hover-blue w3-round"
-                style="background-color: darkslateblue;color:white">Register</button></p>
+                style="background-color: darkslateblue;color:white">Register</button> <button class="w3-btn w3-red" onclick="closesesame()">Close</button></p>
+                
 
           </form>
         </div>
@@ -263,6 +265,10 @@
     opensesame = () => {
       popup = document.getElementById('popup');
       popup.style.display = 'block';
+    }
+    closesesame = () => {
+      popup = document.getElementById('popup');
+      popup.style.display = 'none';
     }
   </script>
 </body>
