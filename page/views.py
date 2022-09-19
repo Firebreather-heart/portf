@@ -23,6 +23,7 @@ def messageme(request):
         email = request.POST.get('email')
         sub =  request.POST.get('subject')
         msg = request.POST.get('message')
+       
 
         message = f'''{name} sent you a message, with subject {sub},
                 full message: {msg}
@@ -43,13 +44,14 @@ def register(request, ):
         age = request.POST.get('age')
         email = request.POST.get('email')
         number = request.POST.get('phone')
+        plt = request.POST.get('platform')
 
         message =  f"""
             {surname} {firstname}, Date of Birth {age}  just registered with
             email {email} and phone {number}
         """
         try:
-            t=threading.Thread(sendmail(message, 'dtenny95@gmail.com','Course Registration',))
+            t=threading.Thread(sendmail(message, 'dtenny95@gmail.com',f'Course Registration {plt}',))
             t.start()
         except:
             pass
