@@ -5,12 +5,14 @@ name = "pypi"
 
 [packages]
 django = "*"
-whitenoise = "*"
-python-dotenv = "*"
-dj-database-url = "*"
 django-jazzmin = "*"
+python-dotenv = "*"
+django-heroku = "*"
+firebmail = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.11"
+python_version = "3.10"
